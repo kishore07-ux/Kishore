@@ -1,8 +1,8 @@
 import streamlit as st
-a=st.chat_input("Enter your command:")
+a=st.chat_input("Enter the command:")
 if a:
 	st.chat_message("user",avatar="user.png").write(a)
-	if a.lower()=="hi":
+	if a.lower()=="hello":
 		st.chat_message("ai",avatar="bot.png").write("hello")
 	elif a.lower()=="bye":
 		st.chat_message("ai",avatar="bot.png").write("goodbye")
